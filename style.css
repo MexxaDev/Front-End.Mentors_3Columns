@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root{
+    --FondoCol1: hsl(31, 77%, 52%) ;
+    --FondoCol2: hsl(184, 100%, 22%);
+    --FondoCol3: hsl(179, 100%, 13%);
+    --Background: hsl(0, 0%, 95%);
+    --Parrafos: hsla(0, 0%, 100%, 0.75);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: var(--Background);
+}
+
+.ContenedorColumnas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-top: 5%;
+}
+
+/*Columnas*/
+
+/*--Columna General*/
+.Columna{
+    width: 23%;
+    height: 470px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: var(--Background);
+    overflow: hidden;
+}
+
+/*--Columna 1*/
+.col{
+    background-color: var(--FondoCol1);
+    border-radius: 10px 0px 0px 10px;
+    
+}
+/*--Columna 2*/
+.col2{
+   background-color:var(--FondoCol2);
+}
+/*--Columna 3*/
+.col3{
+    background-color: var(--FondoCol3);
+    border-radius: 0px 10px 10px 0px;
+}
+
+/*Contenido General de la columna*/
+.cont{
+    margin: 33px;
+}
+.ContenidoCol{
+    align-items: center;
+    text-align: left;
+}
+
+.Titulo{
+    font-family: 'Big Shoulders Display', cursive;
+}
+.Columna_ContenedorTitulo{
+    font-size: 20px;
+}
+.Columna_ContenedorParrafo{
+    width: 210px;
+    overflow: hidden;
+    color: var(--Parrafos);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+.Prrafo{
+    line-height: 1.8;
+    font-family: inherit;
+    font-weight: inherit;
+}
+/*Boton*/
+.Columna_ContenedorBoton{
+    margin-top: 80px;
+}
+.Boton{
+    background-color: var(--Background);
+    border-radius: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.Boton:hover{
+    border: 1px solid var(--Background);
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--Background);
+    cursor:pointer
+}
+.btn1{
+    color: var(--FondoCol1);
+}
+.btn2{
+    color: var(--FondoCol2);
+}
+.btn3{
+    color: var(--FondoCol3);
+}
+
+@media(max-width:375px){
+    .ContenedorColumnas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 4%;
+    }
+    .Columna{
+        width: 100%;
+        height: 480px;
+        border: 1px solid rgba(0, 0, 0, 0);
+        color: var(--Background);
+        overflow: hidden;
+    }
+    .cont{
+        margin-left: 20%;
+    }
+    .Columna_ContenedorParrafo{
+        width: 55%;
+        overflow: hidden;
+        color: var(--Parrafos);
+    }
+
+    .col{
+        background-color: var(--FondoCol1);
+        border-radius: 10px 10px 0px 0px;  
+    }
+    .col3{
+        background-color: var(--FondoCol3);
+        border-radius: 0px 0px 10px 10px;
+    }
+    .Columna_ContenedorBoton{
+        margin-top: 10px;
+    }
+    .Boton{
+        border-radius: 35px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
+
