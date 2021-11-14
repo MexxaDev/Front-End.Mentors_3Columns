@@ -86,9 +86,9 @@ body{
 }
 .Boton{
     background-color: var(--Background);
-    border-radius: 30px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    border-radius: 40px;
+    padding-top: 14px;
+    padding-bottom: 14px;
     padding-left: 30px;
     padding-right: 30px;
     border: none;
